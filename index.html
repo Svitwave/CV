@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpinista Przemysłowy</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/baguettebox.min.css" />
+    //
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.0/css/lightgallery-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.0/lightgallery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <span>DUDA OLEH</span>
+        </div>
+
+        <nav class="nav">
+          <a href="#about">O mnie</a>
+          <a href="#services">Usługi</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#certificates">Certyfikaty</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+
+        <a
+          href="./images/pdf/cv.pdf"
+          class="btn btn-primary header-btn"
+          target="_blank"
+        >
+          CV
+        </a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            ALPINISTA<br />
+            PRZEMYSŁOWY
+          </h1>
+
+          <span class="hero-line"></span>
+
+          <p class="hero-subtitle">Prace elewacyjne i uszczelnienia</p>
+
+          <div class="hero-buttons">
+            <a href="tel:+48665051627" class="btn btn-primary">Zadzwoń</a>
+            <a href="#contact" class="btn btn-secondary">Wycena</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-light">
+      <div class="container">
+        <h2 class="section-title">
+          O mnie
+          <span class="section-line"></span>
+        </h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Jestem wysokokwalifikowanym specjalistą w pracach wysokościowych z
+              <strong>6-letnim doświadczeniem</strong> w alpinizmie
+              przemysłowym. Posiadam certyfikat <strong>IRATA-2</strong> i
+              podejmuję się każdej pracy wymagającej precyzji, odwagi i
+              profesjonalizmu,a także mam umiejętność czytania rysunków
+              technicznych.
+            </p>
+            <p>
+              Jestem <strong>bardzo odpowiedzialny i punktualny</strong>, zawsze
+              dotrzymuję terminów i dbam o bezpieczeństwo na każdym etapie
+              pracy. Dzięki wieloletniemu doświadczeniu potrafię skutecznie
+              planować zadania, zarządzać ryzykiem i dostarczać wyniki na
+              najwyższym poziomie.
+            </p>
+            <p>
+              Podejmuję się zarówno drobnych prac konserwacyjnych, jak i
+              skomplikowanych projektów elewacyjnych czy montażowych. Zawsze
+              dokładam wszelkich starań, aby klient był w pełni zadowolony, a
+              prace wykonane były profesjonalnie i bezpiecznie.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="./images/hero.webp" alt="Alpinista Przemysłowy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2 class="services-title">Moje Usługi</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <!-- SVG icon -->
+          <div class="service-icon">
+            <img
+              src="./images/gun1-removebg-preview.png"
+              class="png-icon"
+              alt="Uszczelnianie"
+              width="90"
+              height="90"
+            />
+          </div>
+          <span class="section-line"></span>
+          <h3>Uszczelnianie szczelin</h3>
+          <p>Wypełnianie i naprawa szczelin dylatacyjnych</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="./images/svg/paint-painter-svgrepo-com.svg"
+              class="icon"
+              alt="Naprawa"
+            />
+          </div>
+          <span class="section-line"></span>
+          <h3>Naprawa elewacji</h3>
+          <p>Renowacja i malowanie elewacji</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- SVG icon -->
+            <img
+              src="./images/svg/drill-electric-svgrepo-com.svg"
+              class="icon"
+              alt="Montaż"
+            />
+          </div>
+          <span class="section-line"></span>
+          <h3>Montaż / Demontaż</h3>
+          <p>Instalacja i demontaż konstrukcji na wysokości</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="./images/alpinist1-removebg-preview.png"
+              class="png-icon"
+              alt="Wysokość"
+              width="90"
+              height="120"
+            />
+          </div>
+          <span class="section-line"></span>
+          <h3>Prace w trudno dostępnych miejscach</h3>
+          <p>Prace na wysokości i w trudnych terenach</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="portfolio-title">Portfolio</h2>
+
+      <div class="gallery">
+        <a href="./images/image-1.jpg" data-caption="Image caption">
+          <img src="./images/image-1.jpg" alt="Praca 1" />
+        </a>
+        <a href="./images/image-2.jpg" data-caption="Image caption">
+          <img src="./images/image-2.jpg" alt="Praca 2" />
+        </a>
+        <a href="./images/image-3.jpg" data-caption="Image caption">
+          <img src="./images/image-3.jpg" alt="Praca 3" />
+        </a>
+        <a href="./images/image-4.jpg" data-caption="Image caption">
+          <img src="./images/image-4.jpg" alt="Praca 4" />
+        </a>
+        <a href="./images/image-5.jpg" data-caption="Image caption">
+          <img src="./images/image-5.jpg" alt="Praca 5" />
+        </a>
+        <a href="./images/image-6.jpg" data-caption="Image caption">
+          <img src="./images/image-6.jpg" alt="Praca 6" />
+        </a>
+      </div>
+    </section>
+
+    <!-- <section id="services" class="services section-dark">
+      <div class="container">
+        <h2 class="section-title">
+          Moje Usługi
+          <span class="section-line"></span>
+        </h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="img/usluga-1.jpg" alt="Prace elewacyjne" />
+            <h3>Prace elewacyjne</h3>
+            <p>
+              Naprawa i konserwacja elewacji na wysokościach, bez użycia
+              rusztowań.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img src="img/usluga-2.jpg" alt="Uszczelnienia" />
+            <h3>Uszczelnienia</h3>
+            <p>Profesjonalne uszczelnianie dachów, okien i konstrukcji.</p>
+          </div>
+
+          <div class="service-card">
+            <img src="img/usluga-3.jpg" alt="Prace montażowe" />
+            <h3>Prace montażowe</h3>
+            <p>
+              Montaż elementów konstrukcyjnych w trudno dostępnych miejscach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="./images/logo.svg"
+            alt="Logo Alpinista"
+            width="160"
+            height="200"
+          />
+        </div>
+
+        <div class="footer-contacts">
+          <a href="mailto:dydikoleg1989@gmail.com">✉ dydikoleg1989@gmail.com</a>
+          <a href="tel:+48665051627">📞 +48 665 051 627</a>
+          <a href="https://wa.me/48665051627" target="_blank">💬 WhatsApp</a>
+          <a href="https://t.me/DudaOleh" target="_blank">📲 Telegram</a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; 2026 DUDA OLEH. Wszystkie prawa zastrzeżone.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/baguetteBox.js" async></script>
+  </body>
+</html>

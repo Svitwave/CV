@@ -1,0 +1,507 @@
+:root {
+  --yellow: #f5b000;
+  --dark: #0f0f0f;
+  --dark-overlay: rgba(0, 0, 0, 0.55);
+  --white: #ffffff;
+  --gray: #d0d0d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo span {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--yellow);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--yellow);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.header-btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
+}
+
+/* HERO */
+
+.hero {
+  max-width: 100%;
+
+  position: relative;
+  height: 700px;
+  margin-top: 80px; /* Add margin to avoid overlap with header */
+  background-image: url("../images/heroo.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* затемнення поверх фото */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--dark-overlay);
+  z-index: 1;
+}
+
+/* контент */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 0 6vw;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* жовта лінія */
+.hero-line {
+  display: block;
+  border-radius: 50px;
+  width: 500px;
+  height: 4px;
+  background-color: var(--yellow);
+  margin: 1.2rem 0 1.4rem;
+}
+
+/* підзаголовок */
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray);
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+
+/* кнопки */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.85rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  background-color: #ffbf1f;
+}
+
+.btn-secondary {
+  border: 2px solid var(--yellow);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+/* section 3 */
+
+/* GLOBAL CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 6vw;
+}
+
+/* about */
+.about {
+  padding: 80px 20px;
+  /* світлий фон для контрасту з VANTA */
+  color: #e9f264;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-image {
+  flex: 0 0 300px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-line {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #f6c400; /* жовта лінія під заголовком */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f5b000;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-line {
+  display: block;
+  border-radius: 50px;
+
+  width: 100%;
+  height: 2px;
+  background: #f6c400;
+  margin-top: 12px;
+}
+
+/* SERVICES */
+
+/* .section-dark {
+  position: relative;
+  background: linear-gradient(135deg, #1b1f23, #14181c);
+} */
+
+/* ------------my services---------- */
+
+.services {
+  background: radial-gradient(circle at top, #2b3037, #14171c);
+  padding: 90px 20px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #f2c94c;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: linear-gradient(180deg, #2a2f36, #1b1f25);
+  border-radius: 12px;
+  padding: 35px 25px 40px;
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 20px 40px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.service-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-icon svg {
+  width: 72px;
+  height: 72px;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.service-icon-svg {
+  flex-shrink: 0; /* Щоб флекс не здавлював іконку */
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px; /* Відступ до тексту */
+  display: block;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column; /* Щоб іконка була зверху, а текст знизу */
+  align-items: center; /* Центрування по горизонталі */
+  justify-content: center; /* Центрування по вертикалі */
+  text-align: center;
+  padding: 35px 25px 40px;
+  border-radius: 15px; /* Наприклад */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+.service-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #bfc3c7;
+}
+
+/* ------------------------------------ */
+
+/* .section-dark {
+  position: relative;
+  background: linear-gradient(135deg, #1b1f23, #14181c);
+  color: #fff;
+  overflow: hidden;
+} */
+
+/* .section-dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.04),
+    transparent 60%
+  );
+  pointer-events: none;
+} */
+.section-dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.06),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+.section-dark > * {
+  position: relative;
+  z-index: 2;
+}
+
+.section-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* -----------------portfolio------------ */
+
+.portfolio {
+  padding: 80px 20px;
+  background: #14171c;
+  color: #ffffff;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f2c94c;
+  margin-bottom: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+} */
+
+/* --------------------------------------------- */
+
+/* .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* CARD */
+/* .service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+} */
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+*/
+
+/* IMAGE TAG — ВАЖЛИВО */
+/* .service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1.5rem;
+  color: #555;
+} */
+
+/* footer */
+.footer {
+  background: #1b1f23; /* темний фон під VANTA */
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-contacts a {
+  display: inline-block;
+  margin: 5px 15px;
+  color: #f6c400; /* жовтий акцент */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-contacts a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
