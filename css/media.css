@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .modal-overlay {
+    align-items: flex-end;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: none;
+    border-radius: 16px 16px 0 0;
+    padding: 24px 20px 30px;
+    animation: slideUp 0.35s ease;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
