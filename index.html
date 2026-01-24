@@ -1,16 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Duda Oleh" />
+
     <meta
       name="description"
       content="Alpinista Przemysłowy - Prace elewacyjne i uszczelnienia na wysokościach."
     />
-    <meta
-      name="keywords"
-      content="alpinista przemysłowy, prace wysokościowe, uszczelnianie elewacji, naprawa elewacji, montaż na wysokości, demontaż elewacji, prace w trudno dostępnych miejscach"
-    />
+
     <meta
       property="og:title"
       content="Alpinista Przemysłowy – Prace na wysokości"
@@ -19,7 +16,6 @@
       property="og:description"
       content="Profesjonalne prace elewacyjne i wysokościowe"
     />
-    <meta property="og:image" content="https://twojastrona.pl/images/og.jpg" />
     <meta property="og:type" content="website" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,15 +41,16 @@
     <header class="header">
       <div class="header-container">
         <div class="logo">
-          <span>DUDA OLEH</span>
+          <strong>DUDA OLEH</strong>
         </div>
 
         <nav class="nav">
-          <a href="#about">O mnie</a>
-          <a href="#services">Usługi</a>
-          <a href="#portfolio">Portfolio</a>
-          <!-- <a href="#certificates">Certyfikaty</a> -->
-          <a href="#contact">Kontakt</a>
+          <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
         </nav>
 
         <a
@@ -72,8 +69,8 @@
         <div class="hero-container">
           <div class="hero-content">
             <h1 class="hero-title">
-              ALPINISTA<br />
-              PRZEMYSŁOWY
+              ALPINISTA
+              <span> PRZEMYSŁOWY </span>
             </h1>
 
             <span class="hero-line"></span>
@@ -82,7 +79,7 @@
 
             <div class="hero-buttons">
               <a href="tel:+48665051627" class="btn btn-primary">Zadzwoń</a>
-              <a href="#contact" class="btn btn-secondary">Wycena</a>
+              <!-- <a href="#contact" class="btn btn-secondary">Wycena</a> -->
             </div>
           </div>
         </div>
@@ -457,8 +454,18 @@
         <div class="footer-contacts">
           <a href="mailto:dydikoleg1989@gmail.com">✉ dydikoleg1989@gmail.com</a>
           <a href="tel:+48665051627">📞 +48 665 051 627</a>
-          <a href="https://wa.me/48665051627" target="_blank">💬 WhatsApp</a>
-          <a href="https://t.me/DudaOleh" target="_blank">📲 Telegram</a>
+          <a
+            href="https://wa.me/48665051627"
+            target="_blank"
+            rel="noopener noreferrer"
+            >💬 WhatsApp</a
+          >
+          <a
+            href="https://t.me/DudaOleh"
+            target="_blank"
+            rel="noopener noreferre"
+            >📲 Telegram</a
+          >
         </div>
 
         <p class="footer-copy">
@@ -467,7 +474,14 @@
       </div>
     </footer>
     <div class="modal-overlay" id="serviceModal-overlay">
-      <div id="serviceModal" class="modal" aria-hidden="true">
+      <div
+        id="serviceModal"
+        class="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        focus-trap
+      >
         <div class="modal-box">
           <button class="modal-close" aria-label="Close modal">×</button>
 
@@ -479,6 +493,6 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="./js/baguetteBox.js" async></script>
+    <script src="./js/baguetteBox.js" defer></script>
   </body>
 </html>
