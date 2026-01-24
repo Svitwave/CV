@@ -79,14 +79,13 @@
 
             <div class="hero-buttons">
               <a href="tel:+48665051627" class="btn btn-primary">Zadzwoń</a>
-              <!-- <a href="#contact" class="btn btn-secondary">Wycena</a> -->
             </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="about section-light">
-        <div class="container">
+        <div class="about-container">
           <h2 class="section-title">
             O mnie
             <span class="section-line"></span>
@@ -127,326 +126,38 @@
       <section id="services" class="services">
         <h2 class="services-title">Moje Usługi</h2>
 
-        <div class="services-grid">
-          <div
-            class="service-card"
-            data-title="Uszczelnianie szczelin"
-            data-description="Zabezpieczenie elewacji przed wilgocią i przeciekami."
-            data-details="Usuwanie uszczelnianie dylatacji i pęknięć usuwanie przecieków elewacji,zabezpieczenie silikonowe i poliuretanowe prace alpinistyczne"
-          >
-            <!-- SVG icon -->
-            <div class="service-icon">
-              <img
-                src="./images/svg/pistol.svg"
-                class="icon"
-                alt="Uszczelnianie"
-              />
-            </div>
-            <span class="section-line"></span>
-            <h3>Uszczelnianie szczelin</h3>
-            <!-- <p>Wypełnianie i naprawa szczelin dylatacyjnych</p> -->
-            <p>Uszczelnienie i przecieki elewacji</p>
-          </div>
+        <ul class="services-grid">
+          <!-- Карточки створюються через JS -->
+          <li class="service-card" data-id="sealing">
+            <div class="service-icon"></div>
+            <h3></h3>
+            <p></p>
+          </li>
 
-          <div
-            class="service-card"
-            data-title="Naprawa elewacji"
-            data-description="Kompleksowa renowacja uszkodzonych powierzchni."
-            data-details="Naprawa pęknięć i ubytków,antykorozja elementów metalowych, malowanie konstrukcji metalowych rzygotowanie podłoża"
-          >
-            <div class="service-icon">
-              <img src="./images/svg/painter.svg" class="icon" alt="Naprawa" />
-            </div>
-            <span class="section-line"></span>
-            <h3>Naprawa elewacji</h3>
-            <p>Antykorozja i malowanie konstrukcji metalowych</p>
-          </div>
+          <li class="service-card" data-id="facade">
+            <div class="service-icon"></div>
+            <h3></h3>
+            <p></p>
+          </li>
 
-          <div
-            class="service-card"
-            data-title="Montaż / Demontaż"
-            data-description="Bezpieczny montaż i demontaż elementów elewacyjnych na wysokości."
-            data-details="Montaż i demontaż elementów elewacji, instalacja konstrukcji reklamowych i technicznych, prace montażowe na wysokości,demontaż bez uszkodzeń powierzchni, prace zgodne z zasadami BHP"
-          >
-            <div class="service-icon">
-              <!-- SVG icon -->
-              <img src="./images/svg/drill.svg" class="icon" alt="Montaż" />
-            </div>
-            <span class="section-line"></span>
-            <h3>Montaż / Demontaż</h3>
-            <!-- <p>Instalacja i demontaż konstrukcji na wysokości</p> -->
-            <p>Montaż / demontaż różnych typów elewacji na wysokości</p>
-          </div>
+          <li class="service-card" data-id="assembly">
+            <div class="service-icon"></div>
+            <h3></h3>
+            <p></p>
+          </li>
 
-          <div
-            class="service-card"
-            data-title="Prace w trudno dostępnych miejscach"
-            data-description="Profesjonalne prace na wysokości i w wymagających warunkach."
-            data-details="Prace na wysokości bez rusztowań, dostęp alpinistyczny, zabezpieczenie trudno dostępnych elementów, zgodność z BHP"
-          >
-            <div class="service-icon">
-              <img
-                src="./images/svg/alpinist1-removebg-preview.svg"
-                class="icon"
-                alt="Wysokość"
-                width="150"
-                height="100"
-              />
-            </div>
-            <span class="section-line"></span>
-            <h3>Prace w trudno dostępnych miejscach</h3>
-            <p>Prace na wysokości i w trudnych terenach</p>
-          </div>
-        </div>
+          <li class="service-card" data-id="hard-to-reach">
+            <div class="service-icon"></div>
+            <h3></h3>
+            <p></p>
+          </li>
+        </ul>
       </section>
 
       <section id="portfolio" class="portfolio">
         <h2 class="portfolio-title">Portfolio</h2>
 
-        <div class="gallery">
-          <a
-            href="./images/portfolio/image-1.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-1.webp"
-              alt="Praca 1"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-2.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-2.webp"
-              alt="Praca 2"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-3.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-3.webp"
-              alt="Praca 3"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-4.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-4.webp"
-              alt="Praca 4"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-5.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-5.webp"
-              alt="Praca 5"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-6.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-6.webp"
-              alt="Praca 6"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-7.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-7.webp"
-              alt="Praca 7"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-8.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-8.webp"
-              alt="Praca 8"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-9.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-9.webp"
-              alt="Praca 9"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-10.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-10.webp"
-              alt="Praca 10"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-11.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-11.webp"
-              alt="Praca 11"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-12.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-12.webp"
-              alt="Praca 12"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-13.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-13.webp"
-              alt="Praca 13"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-14.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-14.webp"
-              alt="Praca 14"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-15.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-15.webp"
-              alt="Praca 15"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-16.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-16.webp"
-              alt="Praca 16"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-17.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-17.webp"
-              alt="Praca 17"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-18.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-18.webp"
-              alt="Praca 18"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-19.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-19.webp"
-              alt="Praca 19"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-20.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-20.webp"
-              alt="Praca 20"
-              loading="lazy"
-            />
-          </a>
-
-          <a
-            href="./images/portfolio/image-21.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-21.webp"
-              alt="Praca 21"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-22.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-22.webp"
-              alt="Praca 22"
-              loading="lazy"
-            />
-          </a>
-
-          <a
-            href="./images/portfolio/image-23.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-23.webp"
-              alt="Praca 23"
-              loading="lazy"
-            />
-          </a>
-          <a
-            href="./images/portfolio/image-24.webp"
-            data-caption="Image caption"
-          >
-            <img
-              src="./images/portfolio/image-24.webp"
-              alt="Praca 24"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <div class="gallery"></div>
       </section>
     </main>
     <footer class="footer" id="contact">
@@ -463,7 +174,7 @@
           <a
             href="https://t.me/DudaOleh"
             target="_blank"
-            rel="noopener noreferre"
+            rel="noopener noreferrer"
             >📲 Telegram</a
           >
         </div>
@@ -480,7 +191,6 @@
         aria-hidden="true"
         role="dialog"
         aria-modal="true"
-        focus-trap
       >
         <div class="modal-box">
           <button class="modal-close" aria-label="Close modal">×</button>
@@ -491,8 +201,9 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/main.js"></script>
+    <script src="./js/services.data.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <script src="./js/baguetteBox.js" defer></script>
   </body>
 </html>

@@ -14,9 +14,23 @@ const closeBtn = modal.querySelector(".modal-close");
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
-    title.textContent = card.dataset.title;
-    description.textContent = card.dataset.description;
-    content.textContent = card.dataset.details;
+    const service = services.find((s) => s.id === card.dataset.id);
+    if (!service) return;
+
+    title.textContent = service.title;
+    description.textContent = service.description;
+
+    // Очищаємо попередній контент
+    content.innerHTML = "";
+
+    // Створюємо список деталей
+    const ul = document.createElement("ul");
+    service.details.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+    content.appendChild(ul);
 
     modalOverlay.classList.add("active");
     modal.setAttribute("aria-hidden", "false");

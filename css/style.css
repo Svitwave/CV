@@ -5,10 +5,7 @@
   --white: #ffffff;
   --gray: #d0d0d0;
 }
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,13 +13,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--dark);
   color: var(--white);
-}
-ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
-  display: flex;
-  gap: 2rem;
+  padding-top: 80px;
 }
 
 /* HEADER */
@@ -58,6 +50,13 @@ ul {
 }
 
 .nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 2rem;
 }
@@ -97,7 +96,6 @@ ul {
 
   position: relative;
   height: 700px;
-  margin-top: 80px; /* Add margin to avoid overlap with header */
   background-image: url("../images/heroo.webp");
   background-size: cover;
   background-position: center right;
@@ -129,6 +127,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 1rem;
   position: relative;
+  text-align: center;
 }
 .hero-title span {
   display: block;
@@ -138,7 +137,8 @@ ul {
 .hero-line {
   display: block;
   border-radius: 50px;
-  width: 500px;
+  max-width: 500px;
+
   height: 4px;
   background-color: var(--yellow);
   margin: 1.2rem 0 1.4rem;
@@ -176,32 +176,24 @@ ul {
 }
 
 .btn-primary:hover {
-  background-color: #ffbf1f;
+  background-color: #ffbf1f; /* світліший жовтий */
+  color: var(--white); /* або щось, що контрастує */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.btn-secondary {
-  border: 2px solid var(--yellow);
-  color: var(--white);
-}
-
-.btn-secondary:hover {
-  background-color: var(--yellow);
-  color: var(--dark);
-}
 /* section 3 */
 
-/* GLOBAL CONTAINER */
-.container {
+/* about */
+.about-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
-
-/* about */
 .about {
   padding: 0;
   /* світлий фон для контрасту з VANTA */
-  color: #e9f264;
+  color: #f3df05e4;
 }
 
 .about-content {
@@ -228,14 +220,6 @@ ul {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
-  position: relative;
 }
 
 .section-line {
@@ -268,9 +252,12 @@ ul {
 
 /* ------------my services---------- */
 
+
+
+/* --------------------------------------------------------- */
 .services {
   background: radial-gradient(circle at top, #2b3037, #14171c);
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
 }
 
 .services-title {
@@ -286,22 +273,26 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.service-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at top,
-    rgba(255, 255, 255, 0.08),
-    transparent 60%
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #2a2f36, #1b1f25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 300px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -311,8 +302,22 @@ ul {
     0 30px 60px rgba(0, 0, 0, 0.8);
 }
 
-.service-card:hover::before {
-  opacity: 1;
+.service-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .service-card:hover .icon {
@@ -320,67 +325,18 @@ ul {
   filter: brightness(1.15);
 }
 
-.service-icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon {
-  display: block;
-  margin: 0 auto;
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
-  width: 120px;
-  height: 120px;
-}
-
-.service-icon-svg {
-  flex-shrink: 0; /* Щоб флекс не здавлював іконку */
-  width: 72px;
-  height: 72px;
-  margin-bottom: 20px; /* Відступ до тексту */
-  display: block;
-}
-
-.service-card {
-  display: flex;
-  flex-direction: column; /* Щоб іконка була зверху, а текст знизу */
-  align-items: center; /* Центрування по горизонталі */
-  justify-content: flex-start; /* Вирівнювання вверх */
-  text-align: center;
-  padding: 35px 25px 40px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  background: linear-gradient(180deg, #2a2f36, #1b1f25);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 20px 40px rgba(0, 0, 0, 0.6);
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  min-height: 300px;
-}
-
 .service-card h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 12px;
-  margin-top: 12px;
   color: #ffffff;
+  margin: 12px 0 8px;
 }
 
 .service-card p {
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 14px;
   color: #bfc3c7;
+  line-height: 1.5;
 }
-
-/* --------------------------------------------------------- */
 
 /* -----------------------MODAL-------------------------  */
 
@@ -420,8 +376,8 @@ ul {
   opacity: 0;
   transition:
     transform 0.3s ease,
-    opacity 0.3s ease,
-    scale(1);
+    opacity 0.3s ease;
+  transform: scale(1);
 }
 
 .modal-title {
@@ -439,11 +395,6 @@ ul {
 .modal-details {
   padding-left: 18px;
   margin-bottom: 25px;
-}
-
-.modal-content li {
-  font-size: 13px;
-  margin-bottom: 8px;
 }
 
 .modal-cta {
@@ -527,7 +478,8 @@ ul {
 .gallery a {
   display: block;
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 8px;
 }
