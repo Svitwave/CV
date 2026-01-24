@@ -1,4 +1,4 @@
-const services = [
+export const services = [
   {
     id: "sealing",
     title: "Usuwanie i uszczelnianie dylatacji",

@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 });
 
 // ---------------------------RENDER SERVICE CARDS---------------------------
-
+import { services } from "./services.data.js";
 function renderServiceCards() {
   document.querySelectorAll(".service-card").forEach((card) => {
     const service = services.find((s) => s.id === card.dataset.id);
