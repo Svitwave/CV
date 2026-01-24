@@ -50,7 +50,7 @@ const services = [
       "Zabezpieczenie trudno dostępnych elementów",
       "Zgodność z BHP",
     ],
-    icon: "../images/svg/alpinist1-removebg-preview.svg",
+    icon: "/images/svg/alpinist1-removebg-preview.svg",
     alt: "ikona alpinisty dla prac w trudno dostępnych miejscach",
     loading: "lazy",
   },
