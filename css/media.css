@@ -154,6 +154,7 @@
   .about-text {
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: center;
   }
 
   .about-image {
@@ -179,8 +180,6 @@
     padding: 20px 15px 25px;
     min-height: auto;
   }
-
-  
 
   .service-card h3 {
     font-size: 14px;
