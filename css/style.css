@@ -18,16 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER */
-/* .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  background: rgba(15, 15, 15, 0.85);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
-
 .header {
   position: fixed;
   top: 0;
@@ -165,7 +155,7 @@ body {
 .hero-line {
   display: block;
   border-radius: 50px;
-  max-width: 500px;
+  max-width: 100%;
 
   height: 4px;
   background-color: var(--yellow);
