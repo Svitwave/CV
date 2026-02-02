@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://svitwave.github.io/Duda-Oleh.github.io/</loc>
-  </url>
-  <url>
-    <loc>https://svitwave.github.io/Duda-Oleh.github.io/#about</loc>
-  </url>
-  <url>
-    <loc>https://svitwave.github.io/Duda-Oleh.github.io/#services</loc>
-  </url>
-  <url>
-    <loc>https://svitwave.github.io/Duda-Oleh.github.io/#portfolio</loc>
-  </url>
-  <url>
-    <loc>https://svitwave.github.io/Duda-Oleh.github.io/#contact</loc>
+    <loc>https://alpinista.warszawa.pl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
