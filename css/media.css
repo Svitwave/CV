@@ -80,35 +80,46 @@
     padding: clamp(0.5rem, 2vw, 1rem);
   }
   .header-container {
-    padding: 0.8rem 3vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0.4rem 3vw;
+  }
+
+  .logo {
+    display: flex;
   }
 
   .logo span {
     font-size: 0.9rem;
   }
 
+  .header-btn {
+    /* order: 1; */
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .btn {
+    width: auto;
+    text-align: center;
+  }
+
   .nav {
-    gap: 0.5rem;
-    order: 3;
-    width: 100%;
-    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
     justify-content: center;
+  }
+  .nav ul {
+    gap: 1rem;
   }
 
   .nav a {
-    font-size: 0.7rem;
-  }
-
-  .header-btn {
-    width: auto;
-    padding: 0.5rem 2.2rem;
-    font-size: 0.8rem;
-    border-radius: 999px; /* капсула */
-    max-width: 280px;
+    font-size: 0.65rem;
+    white-space: nowrap;
   }
 
   .hero {
@@ -136,11 +147,6 @@
 
   .hero-buttons {
     gap: 0.5rem;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
   }
 
   .about {
