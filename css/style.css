@@ -170,7 +170,7 @@ body {
   width: auto;
   height: 4px;
   background-color: var(--yellow);
-  margin: 1.2rem auto 1.4rem;
+  margin: 12px auto 12px;
 }
 
 /* підзаголовок */
@@ -178,7 +178,7 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--gray);
-  margin-bottom: 2.2rem;
+  margin-bottom: 15px;
   text-align: center;
 }
 
